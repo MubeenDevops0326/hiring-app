@@ -4,7 +4,7 @@ ARG NEXUS_USER
 ARG NEXUS_PASSWORD
 RUN apk add --no-cache curl
 RUN curl -u "${NEXUS_USER}:${NEXUS_PASSWORD}" \
-    "http://16.16.198.193:8082/repository/ex/in/javahome/hiring/0.1/hiring-0.1.war" \
+    "http://3.88.239.235:8081/repository/mubeendevops0326/in/javahome/hiring/0.1/hiring-0.1.war" \
     -o /hiring.war
 
 # Stage 2: Build the final image
