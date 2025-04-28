@@ -21,7 +21,7 @@ pipeline {
                 sh """
                     echo \$DOCKERHUB_CREDENTIALS_PSW | docker login -u \$DOCKERHUB_CREDENTIALS_USR --password-stdin
                     docker tag hiring-app:$BUILD_NUMBER ab002/tomcat:$BUILD_NUMBER
-                    docker push ab002/tomcat:$BUILD_NUMBER
+                    docker push task3-argocd/tomcat:$BUILD_NUMBER
                 """
             }
         }
